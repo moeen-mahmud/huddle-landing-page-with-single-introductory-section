@@ -35,7 +35,7 @@ body {
 }
 
 .header_image {
-  width: 16%;
+  width: 200px;
 }
 
 /* Hero Section Styles */
@@ -114,6 +114,8 @@ body {
   border-color: var(--primary-soft-magenta);
 }
 
+/* Attributin */
+
 .attribution {
   text-align: center;
 }
@@ -125,4 +127,66 @@ body {
 .attribution_info a {
   text-decoration: none;
   color: var(--primary-soft-magenta);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+  body {
+    background-image: url("/images/bg-mobile.svg");
+    background-size: contain;
+    padding: ;
+  }
+
+  .header {
+    padding: 2rem 2rem;
+  }
+
+  .header_image {
+    width: 150px;
+  }
+
+  .hero {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .hero_image img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .hero_content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .content_title {
+    font-size: 1.8rem;
+  }
+
+  .content_para {
+    font-size: 1rem;
+  }
+
+  .btn--state {
+    padding: 0.8rem 5rem;
+    font-size: 1rem;
+  }
+
+  .footer .footer_icons {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .footer_icons--state {
+    font-size: 1rem;
+    margin: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
