@@ -1,6 +1,6 @@
 /* Google Fonts API */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap");
 
 /* Colors Declaration */
 
@@ -10,9 +10,119 @@
   --neutral-white: hsl(0, 0%, 100%);
 }
 
+/* Base Styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--primary-violet);
+  background-image: url("/images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  color: var(--neutral-white);
+}
+
+/* Header Section Styles */
+
+.header {
+  padding: 3rem 4rem;
+}
+
+.header_image {
+  width: 16%;
+}
+
+/* Hero Section Styles */
+
+.hero {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.hero_content {
+  margin-top: 3rem;
+  padding-right: 3rem;
+}
+
+.content_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero_content .content_para {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styles */
+
+.btn {
+  padding: 1rem 3.8rem;
+  color: var(--primary-violet);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 1px 5px 22px 8px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-soft-magenta);
+  color: var(--neutral-white);
+}
+
+/* Footer Styles */
+
+.footer .footer_icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5rem;
+}
+
+.footer_icons--state {
+  font-size: 1.5rem;
+  color: var(--neutral-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  border: 1px solid var(--neutral-white);
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 0.4s ease;
+}
+
+.footer_icons--state:hover {
+  color: var(--primary-soft-magenta);
+  border-color: var(--primary-soft-magenta);
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution_info {
+  font-size: 14px;
+}
+
+.attribution_info a {
+  text-decoration: none;
+  color: var(--primary-soft-magenta);
 }
