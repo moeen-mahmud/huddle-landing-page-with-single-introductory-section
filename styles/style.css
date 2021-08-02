@@ -129,6 +129,8 @@ body {
   color: var(--primary-soft-magenta);
 }
 
+/* Media Queries */
+
 @media only screen and (min-width: 280px) and (max-width: 1024px) {
   body {
     background-image: url("/images/bg-mobile.svg");
