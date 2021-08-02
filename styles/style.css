@@ -129,11 +129,10 @@ body {
   color: var(--primary-soft-magenta);
 }
 
-@media only screen and (min-width: 300px) and (max-width: 992px) {
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
   body {
     background-image: url("/images/bg-mobile.svg");
     background-size: contain;
-    padding: ;
   }
 
   .header {
